@@ -1,0 +1,123 @@
+/* Slider Container */
+.tapaz-news-slider {
+    position: relative;
+    max-width: 100%;
+    margin: 20px 0;
+    /* Reduced margin */
+    overflow: hidden;
+    padding: 0;
+}
+
+/* Slider Track */
+.tapaz-slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Slide Item */
+.tapaz-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    /* Tighter padding */
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .tapaz-slide {
+        min-width: 50%;
+        /* 2 slides per view in the main column */
+    }
+}
+
+/* Card Styling */
+.tapaz-news-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    /* Subtle border */
+    border-radius: 4px;
+    /* Sharper corners */
+    box-shadow: none;
+    /* Flatter look */
+    overflow: hidden;
+    width: 100%;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.tapaz-news-card:hover {
+    border-color: #1A4D6E;
+    transform: translateY(-2px);
+}
+
+.tapaz-news-card img {
+    width: 100%;
+    height: 180px;
+    /* Fixed height */
+    object-fit: cover;
+}
+
+.tapaz-news-content {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tapaz-news-content h4 {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1A4D6E;
+    line-height: 1.3;
+}
+
+.tapaz-news-content p {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.tapaz-news-content .more-link {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #E8C482;
+    /* Secondary Gold */
+    text-decoration: none;
+    align-self: flex-start;
+}
+
+.tapaz-news-content .more-link:hover {
+    color: #1A4D6E;
+}
+
+/* Controls */
+.tapaz-slider-controls {
+    display: flex;
+    justify-content: flex-end;
+    /* Right aligned controls */
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.tapaz-slider-btn {
+    background-color: transparent;
+    color: #1A4D6E;
+    border: 1px solid #1A4D6E;
+    padding: 5px 10px;
+    margin: 0 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.tapaz-slider-btn:hover {
+    background-color: #1A4D6E;
+    color: #fff;
+}

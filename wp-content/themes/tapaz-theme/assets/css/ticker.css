@@ -1,0 +1,71 @@
+/* Ticker Container */
+.tapaz-ticker-wrap {
+    width: 100%;
+    background-color: #1A4D6E;
+    /* Primary Deep Blue */
+    color: #fff;
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    border-bottom: 2px solid #E8C482;
+    /* Warm Gold */
+}
+
+/* Ticker Label */
+.tapaz-ticker-label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #E8C482;
+    /* Warm Gold */
+    color: #1A4D6E;
+    padding: 0 15px;
+    font-weight: bold;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Ticker Moving Part */
+.tapaz-ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    /* Start off-screen */
+    animation: ticker-move 30s linear infinite;
+}
+
+.tapaz-ticker-item {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 0.95rem;
+}
+
+.tapaz-ticker-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.tapaz-ticker-item a:hover {
+    text-decoration: underline;
+    color: #E8C482;
+}
+
+@keyframes ticker-move {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+/* Pause on hover */
+.tapaz-ticker-wrap:hover .tapaz-ticker-move {
+    animation-play-state: paused;
+}
