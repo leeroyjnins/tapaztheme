@@ -21,13 +21,18 @@
 
         /* Simple header for preview */
         header {
-            background: #0f2844;
+            background: rgba(15, 40, 68, 0.65);
             color: white;
             padding: 15px 20px;
-            position: sticky;
+            position: fixed;
+            width: 100%;
             top: 0;
+            left: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 3px solid #fff;
         }
 
         header .container {
@@ -95,8 +100,7 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="site-title">
-                TAPAZ.GOV.PH
+            <div class="site-title"><a href="index.html" style="text-decoration: none; color: #fff;">TAPAZ.GOV.PH</a>
                 <span class="title-separator">|</span>
                 <span class="site-subtitle">Official website of the Municipality of Tapaz</span>
             </div>
@@ -115,8 +119,15 @@
     <section class="hero-section">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title">Welcome to the<br>Municipality <i>of</i> &nbsp;Tapaz<br></h1>
+            <h1 class="hero-title">Welcome to the <br>Municipality <i>of</i> &nbsp;Tapaz<br> Official Portal
+            </h1>
             <p class="hero-subtitle">Building a Brighter Future Together. Bakas Tapaz!</p>
+        </div>
+        <div class="scroll-indicator">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
         </div>
     </section>
 
@@ -208,33 +219,34 @@
     <!-- Image Banner Section -->
     <section class="image-banner-section">
         <div class="banner-carousel">
-            <div class="banner-slide active">
-                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&h=600&fit=crop"
-                    alt="Tapaz Landscape">
-                <div class="banner-overlay">
-                    <h3>Discover the Natural Beauty of Tapaz</h3>
-                </div>
-            </div>
-            <div class="banner-slide">
-                <img src="https://images.unsplash.com/photo-1504870712357-65ea720d6078?w=1920&h=600&fit=crop"
-                    alt="Community">
-                <div class="banner-overlay">
-                    <h3>Strong Communities, Brighter Future</h3>
-                </div>
-            </div>
-            <div class="banner-slide">
-                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1920&h=600&fit=crop"
+            <div class="banner-slide-active">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1920&h=400&fit=crop"
                     alt="Government Building">
                 <div class="banner-overlay">
                     <h3>Serving the People with Excellence</h3>
                 </div>
             </div>
+            <!--
+            <div class="banner-slide">
+                <img src="banner2.png?w=1920&h=600&fit=crop" alt="Community">
+                <div class="banner-overlay">
+                    <h3>Strong Communities, Brighter Future</h3>
+                </div>
+            </div>
+
+            <div class="banner-slide">
+                <img src="banner1.png?w=1920&h=600&fit=crop" alt="Tapaz Landscape">
+                <div class="banner-overlay">
+                    <h3>Discover the Natural Beauty of Tapaz</h3>
+                </div>
+            </div>
         </div>
-        <div class="banner-dots">
-            <span class="dot active" data-slide="0"></span>
-            <span class="dot" data-slide="1"></span>
-            <span class="dot" data-slide="2"></span>
-        </div>
+
+            <div class="banner-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>-->
     </section>
 
     <!-- Popular Services Section -->
@@ -298,7 +310,7 @@
         <div class="container">
             <div class="mayor-content">
                 <div class="mayor-image">
-                    <img src="C:\Users\Administrator\Desktop\tapaz2026\mayor.png?w=400&h=400&fit=crop" alt="Mayor">
+                    <img src="mayor1.png?w=400&h=400&fit=crop" alt="Mayor">
                 </div>
                 <div class="mayor-text">
                     <h2>From the Mayor</h2>
